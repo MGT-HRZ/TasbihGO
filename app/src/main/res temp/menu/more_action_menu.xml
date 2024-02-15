@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/action_change_theme"
+        android:icon="@drawable/ic_fluent_dark_theme_24_regular"
+        android:title="Toggle theme"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_share"
+        android:icon="@drawable/ic_fluent_share"
+        android:title="Share or Copy"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/action_item_3"
+        android:title="Set target value"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_item_4"
+        android:title="Show at notif. panel"
+        app:showAsAction="never" />
+
+    <item android:id="@+id/action_item_2"
+        android:title="More"
+        app:showAsAction="never" >
+        <menu>
+            <item android:id="@+id/action_subitem_1"
+                android:title="GitHub repository"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_subitem_2"
+                android:title="Visit website"
+                app:showAsAction="never" />
+
+            <item android:id="@+id/action_subitem_3"
+                android:title="Rate and review"
+                app:showAsAction="never" />
+        </menu>
+    </item>
+
+    <item android:id="@+id/action_item_1"
+        android:title="About"
+        app:showAsAction="never" />
+
+</menu>

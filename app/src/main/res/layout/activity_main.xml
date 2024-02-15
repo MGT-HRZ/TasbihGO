@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgColour"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/text_zikr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/mockMainNum"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_on_primary"
+        android:textSize="125sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.076" />
+
+    <Button
+        android:id="@+id/button_count"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="359dp"
+        android:layout_height="254dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button_bg"
+        android:text="MULA"
+        android:textSize="57sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="359dp"
+        android:layout_height="46dp"
+        android:backgroundTint="@color/resetButton"
+        android:text="Set Semula"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:max="10"
+        android:progress="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.384" />
+
+    <Button
+        android:id="@+id/button_Debug_Purposes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="ViewAndroidBuildNum"
+        android:text="@string/buttonDebug"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_progress_target"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.934"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.382" />
+
+    <TextView
+        android:id="@+id/textView_cummulative_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pusingan : 0"
+        app:layout_constraintBottom_toTopOf="@+id/button_count"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/progressBar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/zikr_harian"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:backgroundTint="@color/resetButton"
+        android:text="Zikir-zikir Harian"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/zikr_vids"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <Button
+        android:id="@+id/zikr_vids"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/resetButton"
+        android:text="Nikmati zikir-zikir"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/zikr_harian"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.485" />
+
+    <!-- <EditText
+        android:id="@+id/editTextPersonName"
+        android:layout_width="186dp"
+        android:layout_height="55dp"
+        android:autofillHints="no"
+        android:ems="8"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/text_zikr"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" /> -->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

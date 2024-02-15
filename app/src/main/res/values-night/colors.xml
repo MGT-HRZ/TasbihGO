@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff99c8</color>
+    <color name="colorPrimaryDark">#f0a6ca</color>
+    <color name="colorPrimaryLight">#002984</color>
+    <color name="colorAccent">#9d4edd</color>
+    <color name="mainButton">#E91E63</color>
+    <color name="bgColour">#F9D7D5</color>
+    <color name="resetButton">#c77dff</color>
+    <color name="textColour">#000000</color>
+    <color name="fluent_default_icon_tint">#FF0000</color>
+</resources>
+
